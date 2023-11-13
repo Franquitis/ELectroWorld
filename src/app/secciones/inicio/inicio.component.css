@@ -2,6 +2,11 @@
     width: 400px;
 }
 
+.example-card:hover{
+    width: 420px;
+    transition: 1ms;
+}
+
 .example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
@@ -11,6 +16,12 @@
 background-color: #004AAD;
 }
 
+.fondocard:hover{
+    background-color: #00224e;
+    transition: 1s;
+    cursor: pointer;
+    }
+
 .divbienve {
     justify-content: center;
     display: flex;
@@ -18,4 +29,19 @@ background-color: #004AAD;
 
 .imagen {
     width: 100%;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Righteous', sans-serif;
+    font-size: 50px;
+    text-shadow: -4px 2px 0px rgba(0,75,173,1);
+}
+
+.textoscard{
+    font-family: 'Righteous', sans-serif;
+}
+
+.botonmas{
+    background: #0018369d;
 }

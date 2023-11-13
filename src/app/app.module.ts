@@ -17,6 +17,7 @@ import { AcercadeComponent } from './secciones/acercade/acercade.component';
 import { InfoComponent } from './secciones/info/info.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatListModule,
     MatCardModule, 
     MatButtonModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

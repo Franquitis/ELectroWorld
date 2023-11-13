@@ -2,22 +2,24 @@
 
 .sidenav-container {
   height: 100%;
-  background: black;
+  background: #001836;
 }
 
 .sidenav {
   width: 200px;
+  background-color: #004AAD;
 }
 
 .sidenav .mat-toolbar {
   background: #004AAD;
+  font-family: 'Righteous', sans-serif;
 }
 
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
   z-index: 1;
-  background: #004AAD;
+  background: rgb(0, 75, 173)
 }
 
 span{
@@ -30,3 +32,6 @@ span:hover{
   transition: 1s;
   cursor: pointer;
 }
+
+
+

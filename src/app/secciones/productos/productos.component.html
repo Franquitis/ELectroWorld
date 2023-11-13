@@ -1,1 +1,67 @@
-<p>productos works!</p>
+<br>
+<h1>Productos</h1>
+<mat-grid-list cols="3" rowHeight="2:1">
+    <mat-grid-tile><img src="./assets/electrodomesticosfiltro.png" (click)="mostrar1=!mostrar1" class="filtros"></mat-grid-tile>
+    <mat-grid-tile><img src="./assets/TV y Audiofiltro.png" (click)="mostrar2=!mostrar2" class="filtros"></mat-grid-tile>
+    <mat-grid-tile><img src="./assets/tecnologiafiltro.png" (click)="mostrar3=!mostrar3" class="filtros"></mat-grid-tile>
+  </mat-grid-list>
+  
+  <mat-grid-list cols="3" rowHeight="1:1.5" *ngIf="mostrar1">
+    <mat-grid-tile *ngFor="let ele of electrodomesticos">
+        <mat-card  class="example-card fondocard" >
+            <mat-card-header>
+                <mat-card-title class="textoscard">{{ele.nombre}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image [src]=ele.img>
+            <mat-card-content>
+                <h2 class="textoscard">
+                    {{ele.precio}}
+                </h2>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button class="textoscard">Comprar</button>
+                <button mat-button class="textoscard botonmas">Más</button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list cols="3" rowHeight="1:1.5" *ngIf="mostrar2">
+    <mat-grid-tile *ngFor="let tv of TVAudio">
+        <mat-card  class="example-card fondocard" >
+            <mat-card-header>
+                <mat-card-title class="textoscard">{{tv.nombre}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image [src]=tv.img>
+            <mat-card-content>
+                <h2 class="textoscard">
+                    {{tv.precio}}
+                </h2>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button class="textoscard">Comprar</button>
+                <button mat-button class="textoscard botonmas">Más</button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list cols="3" rowHeight="1:1.5" *ngIf="mostrar3">
+    <mat-grid-tile *ngFor="let tec of tecnologia">
+        <mat-card  class="example-card fondocard" >
+            <mat-card-header>
+                <mat-card-title class="textoscard">{{tec.nombre}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image [src]=tec.img>
+            <mat-card-content>
+                <h2 class="textoscard">
+                    {{tec.precio}}
+                </h2>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button class="textoscard">Comprar</button>
+                <button mat-button class="textoscard botonmas">Más</button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
