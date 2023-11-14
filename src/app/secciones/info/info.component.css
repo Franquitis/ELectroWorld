@@ -1,0 +1,30 @@
+.divimg{
+    justify-content: center;
+    display: flex;
+}
+
+.imagen{
+    width: 100%;
+}
+
+.contenedorfor{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.fondoformu{
+    width: 50%;
+    border-radius: 5%;
+    background: rgba(0, 0, 0, 0.555);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+p{
+    text-align: center;
+}

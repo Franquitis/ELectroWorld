@@ -18,6 +18,9 @@ import { InfoComponent } from './secciones/info/info.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTableModule} from '@angular/material/table';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [
@@ -42,7 +45,9 @@ import {MatTableModule} from '@angular/material/table';
     MatCardModule, 
     MatButtonModule,
     MatGridListModule,
-    MatTableModule
+    MatTableModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
