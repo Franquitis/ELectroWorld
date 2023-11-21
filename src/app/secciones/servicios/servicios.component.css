@@ -8,6 +8,7 @@ h1{
     font-family: 'Righteous', sans-serif;
     font-size: 50px;
     text-shadow: -4px 2px 0px rgba(0,75,173,1);
+    padding-bottom: 15px;
 }
 
 .todo{
@@ -26,4 +27,7 @@ h1{
     padding-right: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
+    box-shadow: 0px 0px 42px 17px rgba(0,75,173,0.7);
+-webkit-box-shadow: 0px 0px 42px 17px rgba(0,75,173,0.7);
+-moz-box-shadow: 0px 0px 42px 17px rgba(0,75,173,0.7);
 }
